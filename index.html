@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Facebook Clone</title>
+	<style type="text/css">
+		.mdiv
+		{
+			height: 100vh;
+			width: 100%;
+			background-image: url('https://tse3.mm.bing.net/th?id=OIP.RJt2sqhPJLLnFC83Q_2syAHaEK&pid=Api&P=0&h=220');
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+		.loginform
+		{
+			width: 200px;
+			height: 200px;
+			margin: 18% 42%;
+		}
+		input
+		{
+			width: 95%;
+			margin-top: 10px;
+			height: 20px;
+			background-color: transparent;
+			border: none;border-bottom: 2px solid white;
+			text-align: center;
+			font-weight: 20px;
+		}
+		input:focus
+		{
+			outline: none;
+			color: white;
+		}
+		.head
+		{
+			color: white;
+			letter-spacing: 4px;
+			font-size: 30px;
+			font-family: Elephant;
+			font-weight: bolder;
+		}
+		input[type="button"]
+		{
+			background-color: white;
+			height: 30px;
+			border-radius: 30px;
+
+		}
+	</style>
+
+
+
+</head>
+<body>
+	<div class="mdiv">
+		<div class="loginform" align="center">
+			<form autocomplete="off">
+				<h2 class="head">LOGIN</h2>
+				<input type="text" name="un" placeholder="Username" class="ip1" id ="usr">
+				<input type="text" name="pwd" placeholder="Password" style="margin-bottom: 10px;" class="ip1" id="pass">
+				<span><a href="#">Forgot Password?</span>
+				<input type="button" name="login" value="LOGIN" onclick="validate()">
+				<span><a href="#">Create Account</span>
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		let usr1="something";
+		let pass1="Something123";
+
+		function validate(){
+			let usr2=document.getElementById("usr").value;
+			let pass2=document.getElementById("pass").value;
+
+			if ((usr1===usr2)&&(pass1===pass2))
+			{
+				open('Homepage.html');
+			}
+			else{
+				alert("Wrong Credentials");
+			}
+		}
+	</script>
+
+</body>
+</html>
